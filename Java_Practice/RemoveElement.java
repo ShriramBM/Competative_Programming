@@ -1,4 +1,4 @@
-// 
+// Removing the Element from array without extra space
 
 public class RemoveElement {
 
