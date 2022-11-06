@@ -23,12 +23,13 @@ public class BinaryTreeCreation{
         System.out.println("Enter the data ");
         int data = sc.nextInt();
         
-        Node new_node = new Node();
-        new_node.data = data;
-     
+
+        Node new_node = null;
         if(data == -1){
             return new_node;
         }
+        new_node = new Node();
+        new_node.data = data;
 
         System.out.println("Enter the Left side of "+data);
         new_node.left = createTree();
