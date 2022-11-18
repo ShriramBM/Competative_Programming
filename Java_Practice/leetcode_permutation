@@ -1,0 +1,6 @@
+class Solution {
+    public List<List<Integer>> 
+    public List<List<Integer>> permute(int[] nums) {
+        
+    }
+}
