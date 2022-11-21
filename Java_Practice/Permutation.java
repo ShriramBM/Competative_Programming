@@ -3,13 +3,14 @@ public class Permutation{
 
     public static void Logic(String str, String perm){
 
-        if(str.length() == 1){
+        if(str.length() == ){
             System.out.println(perm);
             return;
         }
 
     //    if(str.length() == 0){
-    //     System.out.println(perm);
+    //     System.out.println(perm); 
+    
     //     return;
     //    }
 
