@@ -7,8 +7,11 @@ public class SoldierAndBananaOptimized {
         int total_doller = sc.nextInt();
         int total_banana = sc.nextInt();
 
-        if (((((total_banana * (total_banana + 1)) / 2) * per_banana) - total_doller) > total_doller)
-            System.out.println(((((total_banana * (total_banana + 1)) / 2) * per_banana) - total_doller));
-        else System.out.println(0);
+        if ((((total_banana * (total_banana + 1)) / 2) * per_banana) > total_doller)
+            System.out.println((((total_banana * (total_banana + 1)) / 2) * per_banana) - total_doller);
+        else
+            System.out.println(0);
+        
+        sc.close();
     }
 }

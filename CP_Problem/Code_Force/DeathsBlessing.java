@@ -5,10 +5,10 @@ import java.util.stream.Collectors;
 
 public class DeathsBlessing {
 
-    public Integer x;
-    public Integer y;
+    public Long x;
+    public Long y;
 
-    public DeathsBlessing(Integer x, Integer y) {
+    public DeathsBlessing(Long x, Long y) {
         this.x = x;
         this.y = y;
     }
@@ -28,7 +28,7 @@ public class DeathsBlessing {
         return -1;
     }
 
-    public static int logic(List<DeathsBlessing> sorted_data, List<DeathsBlessing> data, int result) {
+    public static Long logic(List<DeathsBlessing> sorted_data, List<DeathsBlessing> data, Long result) {
 
         if (data.isEmpty())
             return result;
@@ -57,15 +57,15 @@ public class DeathsBlessing {
             List<DeathsBlessing> data = new ArrayList<>();
             int len = sc.nextInt();
             for (int i = 0; i < len; i++)
-                data.add(new DeathsBlessing(sc.nextInt(), 0));
+                data.add(new DeathsBlessing(sc.nextLong(), 0l));
 
             for (int i = 0; i < len; i++)
-                data.get(i).y = sc.nextInt();
+                data.get(i).y = sc.nextLong();
 
             List<DeathsBlessing> sorted_data = data.stream().sorted((a, b) -> a.y.compareTo(b.y))
                     .collect(Collectors.toList());
 
-            System.out.println(logic(sorted_data, data, 0));
+            System.out.println(logic(sorted_data, data, 0l));
         }
 
     }
