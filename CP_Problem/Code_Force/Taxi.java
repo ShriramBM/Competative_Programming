@@ -16,29 +16,27 @@ public class Taxi {
             data.put(inp, data.get(inp) + 1);
         }
         int total = 0;
-        
+
         total = data.get(4) + data.get(3);
 
         if (data.get(3) >= data.get(1))
             data.put(1, 0);
         else
             data.put(1, data.get(1) - data.get(3));
-        
-        total = total+ (data.get(2)/2);
-        data.put(2, data.get(2)%2);
-        total = total + (data.get(1)/4);
-        data.put(1, data.get(1)%4);
-        if(data.get(2)>0 || data.get(1)>0){
+
+        total = total + (data.get(2) / 2);
+        data.put(2, data.get(2) % 2);
+        total = total + (data.get(1) / 4);
+        data.put(1, data.get(1) % 4);
+        if (data.get(2) > 0 || data.get(1) > 0) {
             total++;
-            if(data.get(2)>0 && (data.get(1)+2)>4){
-                
-                    total+=2;
-                }
-            }
-            else{
+            if (data.get(2) > 0 && (data.get(1) + 2) > 4) {
+
                 total++;
+                
+
             }
-        } 
+        }
 
         System.out.println(total);
 
